@@ -169,6 +169,20 @@
   .services-section-4-card-number{
     font-size: 1rem;
   }
+
+    .s-what-we-do-section {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .s-what-we-do-heading-description-div {
+    margin-right: 0;
+  }
+
+  #s-what-we-do-heading {
+    font-size: 2.5rem;
+  }
 }
 
 @media  (max-width: 960px){
@@ -265,6 +279,18 @@
   row-gap: 4px;
   column-gap: 4px;
 }
+
+  #s-what-we-do-heading {
+    font-size: 2.2rem;
+  }
+
+  .s-what-we-do-heading-description {
+    font-size: 0.95rem;
+  }
+
+  .s-what-we-do-description-content {
+    font-size: 0.95rem;
+  }
 
 }
 
@@ -474,6 +500,18 @@
 
   .c-form input[type="submit"] {
     font-size: 14px;
+  }
+
+    .s-what-we-do-section {
+    padding: 2.5rem 1rem;
+  }
+
+  #s-what-we-do-heading {
+    font-size: 2rem;
+  }
+
+  .s-what-we-do-description-cards-div {
+    gap: 1rem;
   }
 
 }
@@ -802,4 +840,31 @@
   .section-3-icon-heading {
   font-size: 10px;
 }
+
+  .s-what-we-do-tagline {
+    justify-content: center;
+  }
+
+  #s-what-we-do-heading {
+    font-size: 1.8rem;
+  }
+
+  .s-what-we-do-heading-description,
+  .s-what-we-do-description-content {
+    font-size: 0.9rem;
+  }
+
+  .s-what-we-do-description-heading {
+    font-size: 1rem;
+  }
+
+  .s-what-we-do-description-heading::before {
+    top: 3px;
+    font-size: 0.8rem;
+  }
+
+  #s-what-we-do-image {
+    border-radius: 12px;
+    max-width: 90%;
+  }
 }
