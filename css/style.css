@@ -342,10 +342,7 @@ img {
 
 /* Link Styling */
 .footer-navigation-lists-ul li a,
-.footer-contact-details-description-div a,
-.address,
-.email,
-.mobile-number {
+.footer-contact-details-description-div a{
   color: var(--text-dark-bg);
   text-decoration: none;
   transition: color 0.3s ease;
@@ -2063,6 +2060,16 @@ backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.c-contact-ditails-svg-div svg{
+  width: 24px;
+  height: 24px;
+}
+
+.c-contact-ditails-svg-div:hover{
+  background-color: #fff;
 }
 
 .c-contact-ditails-svg {
@@ -2138,7 +2145,7 @@ backdrop-filter: blur(6px);
   height: auto;
 }
 
-.c-map{
+#c-map{
   width: 100vw;
 }
 
