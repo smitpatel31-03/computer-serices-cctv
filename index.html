@@ -16,7 +16,7 @@
       <!-- Logo -->
       <div class="header-logo-div">
         <a href="index.html">
-                  <img src="https://www.vhv.rs/dpng/d/427-4273719_random-logo-transparent-background-hd-png-download.png"
+                  <img src="public/images/image.webp"
           alt="Logo" class="logo" />
         </a>
       </div>
@@ -495,7 +495,7 @@
   <footer class="footer">
     <section class="footer-section-1">
       <div class="footer-logo-div">
-        <img src="https://www.vhv.rs/dpng/d/427-4273719_random-logo-transparent-background-hd-png-download.png" alt=""
+        <img src="public/images/image.webp" alt=""
           class="logo">
         <p id="footer-logo-description">Your trusted partner for expert device repairs. We provide fast, affordable
           repair services.</p>
@@ -682,6 +682,11 @@
     // 🚀 Initialize first slide
     showSlide(currentIndex);
 
+    setInterval(()=>{
+      currentIndex = (currentIndex + 1) % totalSlides;
+      showSlide(currentIndex);
+    },4000)
+
     // 👉 Next Slide (loop forward)
     nextBtn.addEventListener('click', () => {
       currentIndex = (currentIndex + 1) % totalSlides;
@@ -693,6 +698,8 @@
       currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
       showSlide(currentIndex);
     });
+
+
   </script>
 
   <script>
