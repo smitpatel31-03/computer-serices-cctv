@@ -1761,27 +1761,27 @@ img {
 }
 
 #s-services-card-1 {
-  background-image: url('/public/images/h_aboutus_image_2.jpg');
+  background-image: url('https://html.awaikenthemes.com/repairit/images/service-1.jpg');
 }
 
 #s-services-card-2 {
-  background-image: url('/public/images/a_Services_3_image_1.jpg');
+  background-image: url('https://html.awaikenthemes.com/repairit/images/service-2.jpg');
 }
 
 #s-services-card-3 {
-  background-image: url('/public/images/a_servives_2.jpg');
+  background-image: url('https://html.awaikenthemes.com/repairit/images/service-3.jpg');
 }
 
 #s-services-card-4 {
-  background-image: url('/public/images/a_servives_2.jpg');
+  background-image: url('https://html.awaikenthemes.com/repairit/images/service-4.jpg');
 }
 
 #s-services-card-5 {
-  background-image: url('/path/to/image1.jpg');
+  background-image: url('https://html.awaikenthemes.com/repairit/images/service-5.jpg');
 }
 
 #s-services-card-6 {
-  background-image: url('/path/to/image2.jpg');
+  background-image: url('https://html.awaikenthemes.com/repairit/images/service-6.jpg');
 }
 
 .a-faq-section {
