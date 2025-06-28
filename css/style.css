@@ -502,7 +502,7 @@ img {
 
 .h-banner-1 {
   display: flex;
-  background-image: url("/public/images/banner_image_1.jpg");
+  background-image: url("https://html.awaikenthemes.com/repairit/images/hero-bg-2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -510,7 +510,7 @@ img {
 
 .h-banner-2 {
   display: none;
-  background-image: url("/public/images/banner_image_2.jpg");
+  background-image: url("https://html.awaikenthemes.com/repairit/images/hero-bg-2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -838,15 +838,15 @@ img {
 }
 
 #h-services-card-1 {
-  background-image: url('/public/images/h_services_card_image_1.jpg');
+  background-image: url('https://html.awaikenthemes.com/repairit/images/service-1.jpg');
 }
 
 #h-services-card-2 {
-  background-image: url('/public/images/h_services_card_image_2.jpg');
+  background-image: url('https://html.awaikenthemes.com/repairit/images/service-2.jpg');
 }
 
 #h-services-card-3 {
-  background-image: url('/public/images/h_services_card_image_3.jpg');
+  background-image: url('https://html.awaikenthemes.com/repairit/images/service-3.jpg');
 }
 
 /*= H Services 2 Section =*/
