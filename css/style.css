@@ -1709,16 +1709,16 @@ img {
 }
 
 #A-our-team-card-1 {
-  background-image: url('/public/images/testimonial1.jpg');
+  background-image: url('https://html.awaikenthemes.com/repairit/images/team-1.jpg');
 }
 #A-our-team-card-2 {
-  background-image: url('/public/images/testimonial2.jpg');
+  background-image: url('https://html.awaikenthemes.com/repairit/images/team-2.jpg');
 }
 #A-our-team-card-3 {
-  background-image: url('/public/images/testimonial3.jpg');
+  background-image: url('https://html.awaikenthemes.com/repairit/images/team-3.jpg');
 }
 #A-our-team-card-4 {
-  background-image: url('/public/images/testimonial4.jpg');
+  background-image: url('https://html.awaikenthemes.com/repairit/images/team-4.jpg');
 }
 
 .s-services-cards-div {
