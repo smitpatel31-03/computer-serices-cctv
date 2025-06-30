@@ -83,10 +83,6 @@
     gap: 20px;
   }
 
-  .h-why-choose-us-card {
-    flex: 1 1 calc(50% - 20px);
-  }
-
   .h-why-choose-us-image-description {
     flex-direction: column;
     gap: 30px;
@@ -459,19 +455,16 @@
   }
 
   .h-why-choose-us-card {
-    flex: 1 1 100%;
+    flex-direction: column;
+    flex: 1 1 40%;
   }
 
   .h-why-choose-us-card-svg-div {
     margin-bottom: 10px;
   }
 
-  .h-why-choose-us-description-cards-div {
-    flex-direction: column;
-  }
-
   .h-why-choose-us-description-card {
-    flex: 1 1 100%;
+    flex: 1 1 40%;
   }
 
   .contactus-heading h3 {
@@ -482,6 +475,12 @@
     flex-direction: column;
     gap: 16px;
   }
+
+   .contactus-detail-card {
+    padding: 20px 20px;
+    flex: 1 1 0px;
+  }
+
 
   .testimonial-image-div img {
   width: 50px;
@@ -715,8 +714,9 @@
   #h-why-choose-us-button,
   #testimonial-button {
     width: 100%;
-    padding: 14px 0;
+    padding: 10px 10px;
     text-align: center;
+    font-size: var(--body-font-size);
   }
 
   .h-why-choose-us-description-card h3 {
@@ -743,11 +743,6 @@
     padding: 40px 20px;
   }
 
-  .contactus-detail-card {
-    padding: 0px 0px;
-    display: flex;
-    justify-content: center;
-  }
 
   .tetimonial-cards-div{
     justify-content: center;
