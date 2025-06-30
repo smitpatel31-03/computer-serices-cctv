@@ -240,7 +240,7 @@ img {
   color: var(--text-dark-bg);
 }
 
-/* Overlay */
+/* Overlay
 
   .overlay {
   position: fixed;
@@ -251,7 +251,7 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
   display: none;
-}
+} */
 
 
 .footer {
