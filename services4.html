@@ -449,15 +449,31 @@
       <h5 class="footer-copyright-heading">Copyright © 2025 All Rights Reserved.</h5>
     </section>
   </footer>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("navMenu");
+  const overlay = document.getElementById("overlay");
+  const closeBtn = document.getElementById("closeNavBtn");
 
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.getElementById("navMenu");
+  function openMobileNav() {
+    if (window.innerWidth <= 860) {
+      navMenu.classList.add("active");
+      overlay.classList.add("show");
+      overlay.classList.remove("hidden");
+    }
+  }
 
-    hamburger.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
-    });
-  </script>
+  function closeMobileNav() {
+    navMenu.classList.remove("active");
+    overlay.classList.remove("show");
+    overlay.classList.add("hidden");
+  }
+
+  hamburger.addEventListener("click", openMobileNav);
+  closeBtn.addEventListener("click", closeMobileNav);
+  overlay.addEventListener("click", closeMobileNav);
+</script>
+
 </body>
 
 </html>
