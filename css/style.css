@@ -1114,14 +1114,14 @@ img {
   flex: 1 1 50%;
 }
 
-#h-why-choose-us-discription-1 {
+/* #h-why-choose-us-discription-1 {
   font-weight: bold;
   font-size: var(--body-font-size);
   color: var(--text-dark-bg);
   margin-bottom: 20px;
-}
+} */
 
-#h-why-choose-us-discription-2 {
+.h-why-choose-us-discription {
   font-size: 0.95rem;
   color: var(--muted-dark);
   line-height: var(--body-line-height);
