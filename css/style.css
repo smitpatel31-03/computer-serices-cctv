@@ -470,6 +470,12 @@ img {
   justify-content: center;
 }
 
+#hBannerSlider {
+  cursor: grab;
+}
+#hBannerSlider:active {
+  cursor: grabbing;
+}
 
 .h-banner-div {
   width: 100vw;

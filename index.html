@@ -657,50 +657,90 @@
     });
   </script>
 
-  <!-- ✅ Slider Script -->
-  <script>
-    const slides = document.querySelectorAll('.h-banner-div');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
+<script>
+  const slides = document.querySelectorAll('.h-banner-div');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const slider = document.getElementById('hBannerSlider');
 
-    let currentIndex = 0;
-    const totalSlides = slides.length;
+  let currentIndex = 0;
+  const totalSlides = slides.length;
 
-    // 🔁 Helper: Hide all slides
-    function hideAllSlides() {
-      slides.forEach(slide => {
-        slide.style.display = 'none';
-      });
-    }
+  // 🔁 Hide all slides
+  function hideAllSlides() {
+    slides.forEach(slide => {
+      slide.style.display = 'none';
+    });
+  }
 
-    // ✅ Helper: Show current slide
-    function showSlide(index) {
-      hideAllSlides();
-      slides[index].style.display = 'flex'; // show only current
-    }
+  // ✅ Show current slide
+  function showSlide(index) {
+    hideAllSlides();
+    slides[index].style.display = 'flex';
+  }
 
-    // 🚀 Initialize first slide
+  // 🚀 Init
+  showSlide(currentIndex);
+
+  // ⏱️ Autoplay
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
+  }, 4000);
 
-    setInterval(()=>{
-      currentIndex = (currentIndex + 1) % totalSlides;
+  // 👉 Next
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+  });
+
+  // 👈 Prev
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    showSlide(currentIndex);
+  });
+
+  // 👉 Drag/Swipe Support
+  let startX = 0;
+  let endX = 0;
+
+  // Mouse
+  slider.addEventListener('mousedown', (e) => {
+    startX = e.clientX;
+  });
+
+  slider.addEventListener('mouseup', (e) => {
+    endX = e.clientX;
+    handleSwipe();
+  });
+
+  // Touch
+  slider.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  slider.addEventListener('touchend', (e) => {
+    endX = e.changedTouches[0].clientX;
+    handleSwipe();
+  });
+
+  // 💡 Swipe Logic
+  function handleSwipe() {
+    const swipeDistance = endX - startX;
+    if (Math.abs(swipeDistance) > 50) {
+      if (swipeDistance < 0) {
+        // Swiped Left
+        currentIndex = (currentIndex + 1) % totalSlides;
+      } else {
+        // Swiped Right
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      }
       showSlide(currentIndex);
-    },4000)
-
-    // 👉 Next Slide (loop forward)
-    nextBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % totalSlides;
-      showSlide(currentIndex);
-    });
-
-    // 👈 Previous Slide (loop backward)
-    prevBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-      showSlide(currentIndex);
-    });
+    }
+  }
+</script>
 
 
-  </script>
 
   <script>
     const cards = document.querySelectorAll('.testimonial-card');
