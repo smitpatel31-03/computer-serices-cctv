@@ -12,6 +12,7 @@
 
 <body>
   <header class="header">
+    <div id="overlay" class="overlay hidden"></div>
     <div class="header-container">
       <!-- Logo -->
       <div class="header-logo-div">
@@ -26,6 +27,7 @@
       <!-- Navigation -->
       <nav class="nav">
         <ul class="header-navigation-div" id="navMenu">
+          <li class="close-btn" id="closeNavBtn">&times;</li>
           <li class="header-list"><a href="index.html">Home</a></li>
           <li class="header-list"><a href="aboutus.html">About Us</a></li>
           <li class="header-list">
@@ -660,14 +662,33 @@
     </section>
   </footer>
 
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.getElementById("navMenu");
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("navMenu");
+  const overlay = document.getElementById("overlay");
+  const closeBtn = document.getElementById("closeNavBtn");
 
-    hamburger.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
-    });
-  </script>
+  function openMobileNav() {
+    if (window.innerWidth <= 860) {
+      navMenu.classList.add("active");
+      overlay.classList.add("show");
+      overlay.classList.remove("hidden");
+    }
+  }
+
+  function closeMobileNav() {
+    navMenu.classList.remove("active");
+    overlay.classList.remove("show");
+    overlay.classList.add("hidden");
+  }
+
+  hamburger.addEventListener("click", openMobileNav);
+  closeBtn.addEventListener("click", closeMobileNav);
+  overlay.addEventListener("click", closeMobileNav);
+</script>
+
+
+
 
   <script>
     const slides = document.querySelectorAll('.h-banner-div');
