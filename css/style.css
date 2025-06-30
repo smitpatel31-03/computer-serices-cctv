@@ -2143,7 +2143,7 @@ backdrop-filter: blur(6px);
   padding: 12px;
 }
 
-.c-form input[type="submit"]:hover {
+#c-form input[type="submit"]:hover {
   background-color: #fbbf24;
 }
 
