@@ -445,6 +445,10 @@ img {
   justify-content: center;
 }
 
+.banner-slash{
+  color: var(--button-background-color);
+}
+
 /* HOME PAGE */
 
 /*Banner Code*/
@@ -528,7 +532,7 @@ img {
 
 .h-banner-1 {
   display: flex;
-  background-image: url("https://html.awaikenthemes.com/repairit/images/hero-bg-2.jpg");
+  background-image: url("/public/images/h_banner_imag_1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -536,7 +540,7 @@ img {
 
 .h-banner-2 {
   display: none;
-  background-image: url("https://html.awaikenthemes.com/repairit/images/hero-bg-2.jpg");
+  background-image: url("/public/images/h_banner_imag_2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -648,11 +652,18 @@ img {
   align-items: stretch;
 }
 
-.h-aboutus-photos-row1-photo img,
+#h-aboutus-photo-1{
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
 #h-aboutus-photo-2 {
   border-radius: 20px;
-  width: 100%;
-  height: auto;
+  width: 600px;
+  height: 300px;
   object-fit: cover;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
@@ -864,15 +875,15 @@ img {
 }
 
 #h-services-card-1 {
-  background-image: url('https://html.awaikenthemes.com/repairit/images/service-1.jpg');
+  background-image: url('/public/images/services_1.jpg');
 }
 
 #h-services-card-2 {
-  background-image: url('https://html.awaikenthemes.com/repairit/images/service-2.jpg');
+  background-image: url('/public/images/services_2.jpg');
 }
 
 #h-services-card-3 {
-  background-image: url('https://html.awaikenthemes.com/repairit/images/service-3.jpg');
+  background-image: url('/public/images/services_3.jpg');
 }
 
 /*= H Services 2 Section =*/
@@ -1791,27 +1802,27 @@ img {
 }
 
 #s-services-card-1 {
-  background-image: url('https://html.awaikenthemes.com/repairit/images/service-1.jpg');
+  background-image: url('/public/images/services_1.jpg');
 }
 
 #s-services-card-2 {
-  background-image: url('https://html.awaikenthemes.com/repairit/images/service-2.jpg');
+  background-image: url('/public/images/services_2.jpg');
 }
 
 #s-services-card-3 {
-  background-image: url('https://html.awaikenthemes.com/repairit/images/service-3.jpg');
+  background-image: url('/public/images/services_3.jpg');
 }
 
 #s-services-card-4 {
-  background-image: url('https://html.awaikenthemes.com/repairit/images/service-4.jpg');
+  background-image: url('/public/images/services_4.jpg');
 }
 
 #s-services-card-5 {
-  background-image: url('https://html.awaikenthemes.com/repairit/images/service-5.jpg');
+  background-image: url('/public/images/services_5.jpg');
 }
 
 #s-services-card-6 {
-  background-image: url('https://html.awaikenthemes.com/repairit/images/service-6.jpg');
+  background-image: url('/public/images/services_6.jpg');
 }
 
 .a-faq-section {
@@ -2229,7 +2240,6 @@ backdrop-filter: blur(6px);
 /* ⭐ FAQ Card */
 /* ============================== */
 
-
 .services-faq-photos-description-div p {
   margin-top: 0.5rem;
   font-size: 0.95rem;
@@ -2248,7 +2258,6 @@ backdrop-filter: blur(6px);
   flex-wrap: wrap;
 }
 
-
 /* Left Navigation List */
 .services-navigation-card {
   width: 80%;
@@ -2258,19 +2267,22 @@ backdrop-filter: blur(6px);
   flex-shrink: 0;
 }
 
-.services-list:last-child {
-  border-bottom: none;
-  border-radius: 0px 0px 10px 10px;
-}
-
 .services-list:hover {
   background-color: #111827;
   color: #d1d5db;
 }
 
+#service-6-name {
+  border-radius: 0px 0px 10px 10px;
+}
+
+#service6-name:hover {
+  background-color: #111827;
+  color: #d1d5db;
+}
+
+
 /* Right FAQ Card */
-
-
 
 .services-faq-photos-description-div {
   display: flex;
