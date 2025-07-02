@@ -2395,6 +2395,7 @@ backdrop-filter: blur(6px);
   width: 100%;
   max-width: 400px;
   height: auto;
+  max-height: 500px;
   border-radius: 10px;
 }
 
