@@ -909,4 +909,14 @@
     border-radius: 12px;
     max-width: 90%;
   }
+
+  .services-section-3-2{
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  .services-section-3-2-icon-div{
+    flex-direction: column;
+    text-align: center;
+  }
 }
