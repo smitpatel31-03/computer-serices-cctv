@@ -532,7 +532,7 @@ img {
 
 .h-banner-1 {
   display: flex;
-  background-image: url("/images/h_banner_imag_1.jpg");
+  background-image: url("/public/images/h_banner_imag_1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -540,7 +540,7 @@ img {
 
 .h-banner-2 {
   display: none;
-  background-image: url("/images/h_banner_imag_2.jpg");
+  background-image: url("/public/images/h_banner_imag_2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -875,15 +875,15 @@ img {
 }
 
 #h-services-card-1 {
-  background-image: url('/images/services_1.jpg');
+  background-image: url('/public/images/services_1.jpg');
 }
 
 #h-services-card-2 {
-  background-image: url('/images/services_2.jpg');
+  background-image: url('/public/images/services_2.jpg');
 }
 
 #h-services-card-3 {
-  background-image: url('/images/services_3.jpg');
+  background-image: url('/public/images/services_3.jpg');
 }
 
 /*= H Services 2 Section =*/
@@ -1802,27 +1802,27 @@ img {
 }
 
 #s-services-card-1 {
-  background-image: url('/images/services_1.jpg');
+  background-image: url('/public/images/services_1.jpg');
 }
 
 #s-services-card-2 {
-  background-image: url('/images/services_2.jpg');
+  background-image: url('/public/images/services_2.jpg');
 }
 
 #s-services-card-3 {
-  background-image: url('/images/services_3.jpg');
+  background-image: url('/public/images/services_3.jpg');
 }
 
 #s-services-card-4 {
-  background-image: url('/images/services_4.jpg');
+  background-image: url('/public/images/services_4.jpg');
 }
 
 #s-services-card-5 {
-  background-image: url('/images/services_5.jpg');
+  background-image: url('/public/images/services_5.jpg');
 }
 
 #s-services-card-6 {
-  background-image: url('/images/services_6.jpg');
+  background-image: url('/public/images/services_6.jpg');
 }
 
 .a-faq-section {
