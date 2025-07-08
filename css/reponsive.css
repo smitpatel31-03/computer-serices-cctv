@@ -33,7 +33,7 @@
     font-size: var(--font-size);
   }
 
-  .h-services-section {
+  .h-services-section{
     padding: 60px 60px;
   }
 
@@ -48,12 +48,14 @@
 
 
   /*= H Services 2 section =*/
-  .h-services-2-section,
-  .a-services-section {
+  .h-services-2-section
+{
     padding: 80px 80px;
   }
 
-  .h-services-2-divs {
+  .h-services-2-divs,
+  #a-services-2-div-2,
+  #a-services-2-div-1 {
     gap: 40px;
   }
 
@@ -392,7 +394,7 @@
   }
 
   /*== H Services Section ==*/
-  .h-services-section {
+  .h-services-section{
     padding: 50px 40px;
   }
 
@@ -411,8 +413,7 @@
   }
 
   /*= H Services 2 section =*/
-  .h-services-2-section,
-  .a-services-section {
+  .h-services-2-section{
     padding: 60px 40px;
   }
 
@@ -427,9 +428,16 @@
     justify-content: center;
   }
 
-  .h-services-2-divs {
+  .h-services-2-divs,
+  #a-services-2-div-2,
+  #a-services-2-div-1 {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  #a-services-2-div-1,
+  #a-services-2-div-2{
+    padding: 40px 40px;
   }
 
   #h-services-2-div-2,
@@ -664,7 +672,7 @@
     text-align: center;
   }
 
-  .h-services-section {
+  .h-services-section{
     padding: 40px 20px;
   }
 
@@ -684,8 +692,7 @@
 
 
   /*= H Services 2 section =*/
-  .h-services-2-section,
-  .a-services-section {
+  .h-services-2-section{
     padding: 40px 20px;
   }
 
