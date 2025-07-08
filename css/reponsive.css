@@ -435,6 +435,10 @@
     align-items: flex-start;
   }
 
+  .a-services-section{
+    padding: 0px;
+  }
+
   #a-services-2-div-1,
   #a-services-2-div-2{
     padding: 40px 40px;
