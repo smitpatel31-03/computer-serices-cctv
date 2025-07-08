@@ -432,7 +432,8 @@
     align-items: flex-start;
   }
 
-  #h-services-2-div-2 {
+  #h-services-2-div-2,
+  #a-services-2-div-2 {
     flex-direction: column;
   }
 
